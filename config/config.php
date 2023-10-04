@@ -9,8 +9,8 @@
         private $host = "127.0.0.1";
         private $username = "root";
         private $password = "";
-        private $db_name = "php-8";
-        private $table_name = "data";
+        private $db_name = "dev";
+        private $table_name = "php_dev";
 
         private $conn;
 
