@@ -24,7 +24,7 @@
         public function connect() {
 
             $this->conn = mysqli_connect($this->host,$this->username,$this->password,$this->db_name);
-
+            
             if($this->conn) {
                 // echo "Connected !!";
             }
