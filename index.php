@@ -8,12 +8,12 @@
     $config->connect();
 
     // Subperglobal:    built in variables
-    /*
-            $_GET           => Associative array (Map)
-            $_POST          => Associative array (Map)
-            $_REQUEST       => Associative array (Map)
-            $_SERVER       => Associative array (Map)
-    */
+    
+    //   $_GET           => Associative array (Map)
+    //   $_POST          => Associative array (Map)
+    //   $_REQUEST       => Associative array (Map)
+    //   $_SERVER        => Associative array (Map)
+   
 
     $submit_btn = @$_REQUEST['sbm_button'];
     $res = null;
