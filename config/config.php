@@ -11,6 +11,7 @@
         private $password = "";
         private $db_name = "dev";
         private $table_name = "php_dev";
+        private $user_table = "users";
 
         private $conn;
 

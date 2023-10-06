@@ -161,7 +161,7 @@
                         <td> <input type="submit" class="btn btn-warning" name="update_btn" value="Update"></input> </td>
                     </form>
 
-                    <form action="" method="get">
+                    <form action="" method="post">
                         <input type="hidden" name="delete_id" value="<?php echo $res['id'];?>">
                         <td> <input type="submit" class="btn btn-danger" name="delete_btn" value="Delete" ></input> </td>
                     </form>
