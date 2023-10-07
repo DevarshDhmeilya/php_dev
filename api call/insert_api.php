@@ -22,7 +22,7 @@
         if($result) {
             $res = ["msg" => "Record inserted successfully !!"];
             http_response_code(201);
-            // $res['msg'] = "Inserted successfully !!";
+            
         }
         else {
             $res = ["msg" => "Record insertion failled !!"];

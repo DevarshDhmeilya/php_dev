@@ -1,28 +1,14 @@
 <?php
-
     include('config/config.php');
 
-    //Object
     $config = new Config();
 
     $config->connect();
 
-    // Subperglobal:    built in variables
-    
-    //   $_GET           => Associative array (Map)
-    //   $_POST          => Associative array (Map)
-    //   $_REQUEST       => Associative array (Map)
-    //   $_SERVER        => Associative array (Map)
-   
-
     $submit_btn = @$_REQUEST['sbm_button'];
     $res = null;
 
-    //isset($var)       => check variable is assigned or not
-
-    if(isset($submit_btn)) {
-
-        // header("Location: demo.php");
+   if(isset($submit_btn)) {
 
         $name = $_POST['fname'];
         $age = $_POST['age'];
@@ -37,7 +23,7 @@
 
     if(isset($delete_btn)) {
 
-        $delete_id = $_GET['delete_id'];
+        $delete_id = @$_GET['delete_id'];
 
         $delete_res = $config->delete($delete_id);
 
@@ -85,12 +71,6 @@
     <center><h1>PHP Form</h1></center> 
     <hr>
 
-<!-- HTTP: Hypertext Transfer Protocol -->
-<!-- GET:   Data fetch              | SELECT -->
-<!-- POST:   Data create, insert    | INSERT -->
-<!-- PUT/PATCH:   update,modify     | UPDATE -->
-<!-- DELETE:   remove data          | DELETE -->
-
     <div class="container">
         <?php if($res) { ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -134,7 +114,6 @@
             ?>"></input>
         </form>
     </div>
-
 
     <div class="container">
 

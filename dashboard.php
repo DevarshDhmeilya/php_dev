@@ -8,11 +8,6 @@
 
     $res = $config->getAllRecords();
 
-    
-    //      mysqli_fetch_array($res);   => Indexed format
-    //      mysqli_fetch_assoc($res);   => Direct access || Accociative array format
-    
-
 ?>
 
 <!DOCTYPE html>

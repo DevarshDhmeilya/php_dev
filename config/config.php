@@ -2,20 +2,17 @@
 
     class Config {
 
-        //Attributes
         private $a = 10;
         private $b = 5;
-
         private $host = "127.0.0.1";
         private $username = "root";
         private $password = "";
         private $db_name = "dev";
         private $table_name = "php_dev";
         private $user_table = "users";
-
+        
         private $conn;
 
-        //Methods
         public function sum() {
             $sum = $this->a + $this->b;
 
@@ -39,7 +36,7 @@
 
             $query = "INSERT INTO $this->table_name(name,age,course) VALUES('$name',$age,'$course')";
 
-            $res = mysqli_query($this->conn,$query); // bool
+            $res = mysqli_query($this->conn,$query); 
 
             return $res;
         }
@@ -48,7 +45,7 @@
 
             $query = "SELECT * FROM $this->table_name";
 
-            return mysqli_query($this->conn,$query);   //Object    => records (associative array)
+            return mysqli_query($this->conn,$query);  
 
         }
 
@@ -67,8 +64,6 @@
             return mysqli_query($this->conn,$query);
 
         }
-
-
 
     }   
      
